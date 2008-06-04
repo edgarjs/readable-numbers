@@ -1,0 +1,49 @@
+==Sinopsis
+ReadableNumbers converts a given number to its letter version.
+
+
+==Repository
+    git://github.com/edgarjs/readable-numbers.git
+
+==Home
+    http://mimbles.net
+
+==Usage
+*Integers*
+    1738.to_letter will produce:
+	mil setecientos treinta y ocho
+    421.to_currency will produce:
+	cuatrocientos veintiun pesos M.N.
+
+*Floats*
+    314.12.to_letter will produce:
+	trescientos catorce punto doce
+    94.50.to_currency will produce:
+	noventa y cuatro pesos con cincuenta centavos M.N.
+
+*Negatives*
+    -31.to_letter will produce:
+	menos treinta y uno
+    -2.14.to_letter will produce:
+	menos dos punto catorce
+
+<b>Octals, binaries, and others</b>
+    010.to_letter (octal 010 = decimal 8) will produce:
+	ocho
+    0b10.to_letter (binary 10 = decimal 2) will produce:
+	dos
+    0x1A.to_letter (hex 1AC = decimal 26) will produce:
+	veintiseis
+
+
+==Notes
+Currently the plugin supports only Spanish language, but it's intended to be
+automatically localizable through GetText (probably).
+
+
+= CREDITS
+* _Version_: 1.2.2
+* _Author_: Edgar J. Suarez Heredia - http://mimbles.net
+* _Feedback_: edgar.js@gmail.com
+* _License_: Rails' (MIT)
+* Thanks to Xavier Noria for helping to resolve some problems.
